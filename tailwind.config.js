@@ -16,3 +16,10 @@ module.exports = {
   },
   plugins: [],
 }
+
+
+// 480px
+// 768px
+// 992px
+// 1200px
+// 1920px
