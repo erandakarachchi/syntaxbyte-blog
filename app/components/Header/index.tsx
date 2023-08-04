@@ -75,7 +75,7 @@ const Header = () => {
           <div className="border-2 border-slate-100 flex items-center pr-2 py-1">
             <input
               placeholder="Search"
-              className="px-5 py-1 outline-none text-base-content"
+              className="px-5 py-1 outline-none text-base-content rounded"
             ></input>
             <FaSistrix />
           </div>

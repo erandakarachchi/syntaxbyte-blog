@@ -1,13 +1,33 @@
 import Image from "next/image";
+import BannerCard from "@/app/components/BannerCard";
+import Advertisement from "@/app/components/Advertisement";
+import PostCard from "@/app/components/PostCard";
 
 export default function Home() {
   return (
     <main className="container">
-      <h1>
-        Since version 10.2, Next.js has provided a font Optimization feature for
-        a web application. Next.js improves font optimization in the latest
-        version and provides a disabled feature for font optimization.
-      </h1>
+      <section>
+        <BannerCard />
+      </section>
+      <section className="container mt-20">
+        <Advertisement />
+      </section>
+      <section className="mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <PostCard />
+          <PostCard />
+          <PostCard />
+          <PostCard />
+          <PostCard />
+          <PostCard />
+          <PostCard />
+          <PostCard />
+          <PostCard />
+        </div>
+      </section>
+      <section className="container mt-20">
+        <Advertisement />
+      </section>
     </main>
   );
 }
