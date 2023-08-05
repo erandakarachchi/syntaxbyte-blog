@@ -10,8 +10,7 @@ const SingleBlogPost = ({ params }: Props) => {
   return (
     <article className="blog-container mt-4">
       <Image
-        // src="https://placehold.it/1200x630"
-        src="https://unsplash.it/1200/630"
+        src="https://placehold.it/1200x630?random"
         alt="Banner"
         width={1200}
         height={630}

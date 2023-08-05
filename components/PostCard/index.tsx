@@ -4,7 +4,7 @@ const PostCard = () => {
   return (
     <div className="border-2 border-slate-100 rounded flex flex-col items-center px-4 py-4 cursor-pointer">
       <Image
-        src="https://unsplash.it/380/240?random=1"
+        src="https://placehold.it/380x240"
         alt="Banner"
         width={380}
         height={240}
