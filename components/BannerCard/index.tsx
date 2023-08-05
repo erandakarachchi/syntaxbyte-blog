@@ -3,15 +3,17 @@ import Image from "next/image";
 const BannerCard = () => {
   return (
     <div className="relative rounded overflow-hidden text-white">
-      <Image
-        src="https://unsplash.it/1280/720"
-        alt="Banner"
-        width={1280}
-        height={720}
-        objectFit="cover"
-      />
+      <div className="w-full aspect-video">
+        <Image
+          src="https://unsplash.it/1200/675"
+          alt="Banner"
+          fill={true}
+          objectFit="cover"
+        />
+      </div>
+
       <div className="absolute bottom-0 bg-black w-full h-full bg-opacity-10 bg-gradient-to-t from-black via-black-opacity-5 to-transparent">
-        <div className="absolute px-4 py-4 bottom-0">
+        <div className="absolute px-6 py-6 bottom-0">
           <h1 className="text-lg font-semibold md:text-2xl lg:w-3/4 lg:text-3xl">
             The Road to Full-Stack Development: Navigating Frontend and Backend
             Technologies.
@@ -43,3 +45,10 @@ const BannerCard = () => {
 };
 
 export default BannerCard;
+
+// style={{
+//   width: "1280px",
+//   background: "red",
+//   height: "720px",
+//   position: "relative",
+// }}

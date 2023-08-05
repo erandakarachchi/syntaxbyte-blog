@@ -8,10 +8,6 @@ export const headerData = [
     path: "/about",
   },
   {
-    name: "Contact",
-    path: "/contact",
-  },
-  {
     name: "Blog",
     path: "/blog",
   },
