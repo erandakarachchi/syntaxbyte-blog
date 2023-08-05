@@ -4,13 +4,12 @@ const BannerCard = () => {
   return (
     <div className="relative rounded overflow-hidden text-white">
       <Image
-        src="https://placehold.it/1280x600"
+        src="https://unsplash.it/1280/720"
         alt="Banner"
         width={1280}
-        height={600}
+        height={720}
         objectFit="cover"
       />
-
       <div className="absolute bottom-0 bg-black w-full h-full bg-opacity-10 bg-gradient-to-t from-black via-black-opacity-5 to-transparent">
         <div className="absolute px-4 py-4 bottom-0">
           <h1 className="text-lg font-semibold md:text-2xl lg:w-3/4 lg:text-3xl">

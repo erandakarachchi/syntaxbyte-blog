@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { headerData } from "@/app/data/data";
+import { headerData } from "@/data/data";
 import { FaSistrix, FaBars } from "react-icons/fa6";
 import { MdClose } from "react-icons/md";
 

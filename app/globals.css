@@ -6,6 +6,10 @@
   .container {
     @apply max-w-7xl mx-auto px-4 md:px-12 xl:px-0;
   }
+
+  .blog-container{
+    @apply max-w-prose mx-auto px-4 md:px-12 xl:px-0;
+  }
 }
 
 @layer utilities {

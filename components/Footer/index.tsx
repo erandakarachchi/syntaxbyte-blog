@@ -70,7 +70,7 @@ const Footer = () => {
               ></input>
               <MdMailOutline />
             </div>
-            <button className="font-semibold text-justify px-4 py-2 rounded bg-red-100 hover:bg-red-200 transition">
+            <button className="font-semibold text-justify uppercase font px-8 py-2 rounded bg-red-100 hover:bg-red-200 transition">
               Subscribe
             </button>
           </div>
