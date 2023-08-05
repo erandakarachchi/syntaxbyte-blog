@@ -1,10 +1,16 @@
 import Image from "next/image";
 
-const PostCard = () => {
+type Props = {
+  imageUrl: string;
+};
+
+const PostCard = (props:Props) => {
   return (
     <div className="border-2 border-slate-100 rounded flex flex-col items-center px-4 py-4 cursor-pointer">
       <Image
-        src="https://placehold.it/380x240"
+        // src="https://placehold.it/380x240"
+        // src="https://unsplash.it/380/240?random"
+        src={props.imageUrl || "https://unsplash.it/380/240?random"}
         alt="Banner"
         width={380}
         height={240}
