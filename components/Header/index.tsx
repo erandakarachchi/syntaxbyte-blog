@@ -18,7 +18,7 @@ const MobileMenu = ({ setSideMenuOpen }: MobileMenuProps) => {
   };
 
   return (
-    <div className="container absolute py-5 top-0 left-0 w-full bg-white h-screen md:w-1/2 lg:hidden">
+    <div className="container z-10 absolute py-5 top-0 left-0 w-full bg-white h-screen md:w-1/2 lg:hidden">
       <div className="w-full flex items-center justify-between">
         <p className="font-semibold text-xl">Menu</p>
         <MdClose onClick={closeMenu} />

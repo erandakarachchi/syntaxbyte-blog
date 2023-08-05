@@ -45,10 +45,3 @@ const BannerCard = () => {
 };
 
 export default BannerCard;
-
-// style={{
-//   width: "1280px",
-//   background: "red",
-//   height: "720px",
-//   position: "relative",
-// }}
