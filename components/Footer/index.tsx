@@ -4,8 +4,8 @@ import { MdMailOutline } from "react-icons/md";
 const Footer = () => {
   return (
     <footer className="bg-slate-50 mt-20">
-      <div className="container mx-auto py-8 grid grid-cols-12">
-        <div className="col-span-4">
+      <div className="container mx-auto py-8 grid grid-cols-1 gap-8 md:gap-0 md:grid-cols-12">
+        <div className="md:col-span-4">
           <h4 className="font-semibold text-xl">About</h4>
           <p className="text-md py-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -21,8 +21,8 @@ const Footer = () => {
             123
           </p>
         </div>
-        <div className="col-span-4">
-          <div className="flex justify-around">
+        <div className="md:col-span-4">
+          <div className="flex justify-between md:justify-around">
             <div>
               <h4 className="font-semibold text-xl">Links</h4>
               <div className="flex flex-col gap-2 py-4">
@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-4">
+        <div className="md:col-span-4">
           <div className="flex flex-col items-center  gap-2">
             <h4 className="font-semibold text-xl">Weekly Newsletter</h4>
             <p>Get weekly updates via email</p>
@@ -70,7 +70,7 @@ const Footer = () => {
               ></input>
               <MdMailOutline />
             </div>
-            <button className="font-semibold text-justify uppercase font px-8 py-2 rounded bg-red-100 hover:bg-red-200 transition">
+            <button className="font-semibold text-justify uppercase font px-8 py-2 mt-2 rounded bg-red-100 hover:bg-red-200 transition">
               Subscribe
             </button>
           </div>
