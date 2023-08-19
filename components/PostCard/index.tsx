@@ -21,9 +21,7 @@ const PostCard = (props: Props) => {
         className="rounded"
       />
       <Link href={`/posts/${props.postId}`} className="self-start">
-        <h3 className="text-md md:text-xl font-semibold mt-4">
-          {props.postName}
-        </h3>
+        <h3 className="heading-3 md:text-xl mt-4">{props.postName}</h3>
       </Link>
 
       <div className="flex items-center self-start gap-2 mt-2 md:gap-2 md:mt-4">

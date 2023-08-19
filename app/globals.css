@@ -7,8 +7,27 @@
     @apply max-w-7xl mx-auto px-4 md:px-12 xl:px-0;
   }
 
-  .blog-container{
+  .blog-container {
     @apply max-w-prose mx-auto px-4 md:px-12 xl:px-0;
+  }
+
+  .heading-1 {
+    @apply text-5xl font-extrabold;
+  }
+  .heading-2 {
+    @apply text-4xl font-bold;
+  }
+  .heading-3 {
+    @apply text-3xl font-bold;
+  }
+  .heading-4 {
+    @apply text-2xl font-extrabold;
+  }
+  .heading-5 {
+    @apply text-xl font-extrabold;
+  }
+  .heading-6 {
+    @apply text-lg font-extrabold;
   }
 }
 

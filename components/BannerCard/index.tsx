@@ -14,7 +14,7 @@ const BannerCard = () => {
 
       <div className="absolute bottom-0 bg-black w-full h-full bg-opacity-10 bg-gradient-to-t from-black via-black-opacity-5 to-transparent">
         <div className="absolute px-6 py-6 bottom-0">
-          <h1 className="text-lg font-semibold md:text-2xl lg:w-3/4 lg:text-3xl">
+          <h1 className="heading-1 md:text-2xl lg:w-3/4 lg:text-3xl">
             The Road to Full-Stack Development: Navigating Frontend and Backend
             Technologies.
           </h1>

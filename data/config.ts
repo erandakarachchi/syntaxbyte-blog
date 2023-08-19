@@ -5,15 +5,29 @@ const client = createClient({
   accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_CONTENT_DELIVERY_API_KEY!,
 });
 
-const getPosts = async () => {
+const getPostsByType = async <T>(type: string) => {
   try {
     const entries = await client.getEntries({
-      content_type: "post",
+      content_type: type,
     });
     return entries.items;
   } catch (error) {
-    console.log(error);
+    console.error("error occurred while fetching entries");
+    throw error;
   }
 };
 
-export { getPosts };
+const getPostById = async <T>(id: string) => {
+  try {
+    const entry = await client.getEntries({
+      content_type: "post",
+      "fields.postId": id,
+    });
+    return entry;
+  } catch (error) {
+    console.error("error occurred while fetching entry");
+    throw error;
+  }
+};
+
+export { getPostsByType, getPostById };

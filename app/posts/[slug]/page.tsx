@@ -17,7 +17,7 @@ const SingleBlogPost = ({ params }: Props) => {
         objectFit="cover"
         className="rounded"
       />
-      <h1 className="text-4xl font-bold mt-6">
+      <h1 className="heading-1 mt-6">
         Python vs. JavaScript: A Comprehensive Comparison for Beginners
       </h1>
 
