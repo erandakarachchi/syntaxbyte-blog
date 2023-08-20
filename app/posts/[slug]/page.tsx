@@ -10,14 +10,9 @@ type Props = {
 };
 
 const SingleBlogPost = async ({ params }: Props) => {
-  console.log("SLUG : --------------", params.slug);
-
+  
   const results: any = await getPostBySlug(params.slug);
-
-  console.log("POST : --------------", JSON.stringify(results));
-
   const article = results.items[0];
-  console.log("article", article);
 
   return (
     <article className="blog-container mt-4">

@@ -9,6 +9,9 @@ export interface IAuthorFields {
 
   /** authorName */
   authorName: string;
+
+  /** avatar */
+  avatar?: Asset | undefined;
 }
 
 export interface IAuthor extends Entry<IAuthorFields> {
@@ -34,6 +37,21 @@ export interface IPostFields {
 
   /** content */
   content?: Document | undefined;
+
+  /** title */
+  title: string;
+
+  /** slug */
+  slug: string;
+
+  /** imageUrl */
+  imageUrl?: Asset | undefined;
+
+  /** authorName */
+  authorName?: Entry<{ [fieldId: string]: unknown }> | undefined;
+
+  /** publishedDate */
+  publishedDate: string;
 }
 
 export interface IPost extends Entry<IPostFields> {

@@ -8,7 +8,7 @@
   }
 
   .blog-container {
-    @apply max-w-prose mx-auto px-4 md:px-12 xl:px-0;
+    @apply max-w-[80ch] mx-auto px-4 md:px-12 xl:px-0;
   }
 
   .heading-1-title {

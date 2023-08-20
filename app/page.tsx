@@ -35,17 +35,6 @@ const Home: React.FC = async () => {
               slug={post.fields.slug}
             />
           ))}
-          {postsData.map((post) => (
-            <PostCard
-              key={post.postId}
-              postId={post.postId}
-              imageUrl={post.imageUrl}
-              authorName={post.authorName}
-              publishedDate={post.publishedDate}
-              postName={post.title}
-              slug=""
-            />
-          ))}
         </div>
       </section>
       <section className="container mt-10 lg:mt-20">
