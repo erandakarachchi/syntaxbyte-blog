@@ -11,23 +11,27 @@
     @apply max-w-prose mx-auto px-4 md:px-12 xl:px-0;
   }
 
-  .heading-1 {
-    @apply text-5xl font-extrabold;
-  }
-  .heading-2 {
+  .heading-1-title {
     @apply text-4xl font-bold;
   }
+
+  .heading-1 {
+    @apply text-2xl font-bold;
+  }
+  .heading-2 {
+    @apply text-xl font-bold;
+  }
   .heading-3 {
-    @apply text-3xl font-bold;
+    @apply text-lg font-semibold;
   }
   .heading-4 {
-    @apply text-2xl font-extrabold;
+    @apply text-base font-semibold;
   }
   .heading-5 {
-    @apply text-xl font-extrabold;
+    @apply text-sm font-semibold;
   }
   .heading-6 {
-    @apply text-lg font-extrabold;
+    @apply text-xs font-semibold;
   }
 }
 

@@ -9,6 +9,14 @@ const getPostsByType = async <T>(type: string) => {
   try {
     const entries = await client.getEntries({
       content_type: type,
+      select: [
+        "fields.postId",
+        "fields.slug",
+        "fields.title",
+        "fields.imageUrl",
+        "fields.authorName",
+        "fields.publishedDate",
+      ],
     });
     return entries.items;
   } catch (error) {
@@ -30,4 +38,17 @@ const getPostById = async <T>(id: string) => {
   }
 };
 
-export { getPostsByType, getPostById };
+const getPostBySlug = async <T>(slug: string) => {
+  try {
+    const entry = await client.getEntries({
+      content_type: "post",
+      "fields.slug": slug,
+    });
+    return entry;
+  } catch (error) {
+    console.error("error occurred while fetching entry");
+    throw error;
+  }
+};
+
+export { getPostsByType, getPostById, getPostBySlug };

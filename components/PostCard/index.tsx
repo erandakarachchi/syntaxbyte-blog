@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { processImageUrl } from "@/lib/utils";
 
 type Props = {
   imageUrl: string;
@@ -7,20 +8,21 @@ type Props = {
   postName: string;
   authorName: string;
   publishedDate: string;
+  slug: string;
 };
 
 const PostCard = (props: Props) => {
   return (
     <div className="border-2 border-slate-100 rounded flex flex-col items-center px-4 py-4 cursor-pointer">
       <Image
-        src={props.imageUrl}
+        src={processImageUrl(props.imageUrl)}
         alt="Banner"
         width={380}
         height={240}
         objectFit="cover"
         className="rounded"
       />
-      <Link href={`/posts/${props.postId}`} className="self-start">
+      <Link href={`/posts/${props.slug}`} className="self-start">
         <h3 className="heading-3 md:text-xl mt-4">{props.postName}</h3>
       </Link>
 
