@@ -16,6 +16,7 @@ const getPostsByType = async <T>(type: string) => {
         "fields.imageUrl",
         "fields.authorName",
         "fields.publishedDate",
+        "fields.isTrending",
       ],
     });
     return entries.items;

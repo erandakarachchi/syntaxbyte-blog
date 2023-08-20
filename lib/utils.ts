@@ -4,4 +4,8 @@ const processImageUrl = (url: string): string => {
   return url;
 };
 
-export { processImageUrl };
+const getTrendingPost = (posts: any[]) => {
+  return posts.filter((post) => post.fields.isTrending === true);
+};
+
+export { processImageUrl, getTrendingPost };

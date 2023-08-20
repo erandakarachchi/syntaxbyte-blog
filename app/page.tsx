@@ -1,9 +1,9 @@
 import BannerCard from "@/components/BannerCard";
 import Advertisement from "@/components/Advertisement";
 import PostCard from "@/components/PostCard";
-import { postsData } from "@/data/data";
 import { getPostsByType } from "@/data/config";
 import { IPost } from "@/@types/generated/contentful";
+import { getTrendingPost } from "@/lib/utils";
 
 async function getAllPosts() {
   const posts = await getPostsByType<IPost[]>("post");
@@ -13,10 +13,22 @@ async function getAllPosts() {
 const Home: React.FC = async () => {
   const allPosts = await getAllPosts();
 
+  const trendingPost: any = getTrendingPost(allPosts)[0];
+
+  console.log("trendingPost", trendingPost);
+
   return (
     <main className="container">
       <section>
-        <BannerCard />
+        <BannerCard
+          key={trendingPost.fields.postId}
+          postId={trendingPost.fields.postId}
+          imageUrl={trendingPost.fields.imageUrl.fields.file.url}
+          authorName={trendingPost.fields.authorName.fields.authorName}
+          publishedDate={trendingPost.fields.publishedDate}
+          postName={trendingPost.fields.title}
+          slug={trendingPost.fields.slug}
+        />
       </section>
       <section className="container mt-10 lg:mt-20">
         <Advertisement />

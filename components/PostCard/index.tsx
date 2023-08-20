@@ -26,7 +26,7 @@ const PostCard = (props: Props) => {
           />
         </div>
 
-        <h3 className="heading-3 md:text-xl mt-4 line-clamp-2y">
+        <h3 className="heading-3 md:text-xl mt-4 line-clamp-2">
           {props.postName}
         </h3>
 
