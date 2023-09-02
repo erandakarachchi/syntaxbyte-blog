@@ -13,8 +13,12 @@ type Props = {
 
 const PostCard = (props: Props) => {
   return (
-    <Link href={`/posts/${props.slug}`} className="self-start" title={props.postName}>
-      <div className="border-2 border-slate-100 rounded flex flex-col items-center px-4 py-4 cursor-pointer">
+    <div className="border-2 border-slate-100 rounded flex flex-col items-center px-4 py-4 cursor-pointer">
+      <Link
+        href={`/posts/${props.slug}`}
+        className="self-start"
+        title={props.postName}
+      >
         <div className="relative overflow-hidden ">
           <Image
             src={processImageUrl(props.imageUrl)}
@@ -25,7 +29,23 @@ const PostCard = (props: Props) => {
             className="rounded transform hover:scale-125 transition duration-500 ease-in-out"
           />
         </div>
-
+      </Link>
+      <div className="flex gap-4 mt-4 items-start w-full text-pink-600 cursor-default">
+        <span className="cursor-pointer transition-all ease-linear duration-300 hover:font-bold">
+          #AWS
+        </span>
+        <span className="cursor-pointer transition-all ease-linear duration-300 hover:font-bold">
+          #Serverless
+        </span>
+        <span className="cursor-pointer transition-all ease-linear duration-300 hover:font-bold">
+          #Javascript
+        </span>
+      </div>
+      <Link
+        href={`/posts/${props.slug}`}
+        className="self-start"
+        title={props.postName}
+      >
         <h3 className="heading-3 md:text-xl mt-4 line-clamp-2 hover:underline">
           {props.postName}
         </h3>
@@ -43,8 +63,8 @@ const PostCard = (props: Props) => {
             {props.publishedDate}
           </p>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 

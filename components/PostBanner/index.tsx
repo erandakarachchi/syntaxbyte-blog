@@ -12,7 +12,7 @@ type Props = {
 
 const PostBanner = (props: Props) => {
   return (
-    <div className="container h-[300px] relative text-white rounded overflow-hidden">
+    <div className="container h-[300px] relative text-white rounded overflow-hidden p-0">
       <Image
         src={processImageUrl(props.imageUrl)}
         alt="Banner"
