@@ -50,7 +50,7 @@ const Header = () => {
   };
 
   return (
-    <header className="container py-5">
+    <header className="container py-5 bg-white sticky top-0 z-10">
       {sideMenuOpen && <MobileMenu setSideMenuOpen={setSideMenuOpen} />}
       <div className="grid grid-cols-12 items-center">
         <div className="col-span-6 lg:col-span-3">

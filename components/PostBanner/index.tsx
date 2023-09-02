@@ -1,5 +1,5 @@
-import { processImageUrl } from "@/lib/utils";
 import Image from "next/image";
+import { processImageUrl } from "@/lib/utils";
 
 type Props = {
   imageUrl: string;
@@ -10,21 +10,19 @@ type Props = {
   slug: string;
 };
 
-const BannerCard = (props: Props) => {
+const PostBanner = (props: Props) => {
   return (
-    <div className="relative rounded overflow-hidden text-white">
-      <div className="w-full aspect-video">
-        <Image
-          src={processImageUrl(props.imageUrl)}
-          alt="Banner"
-          fill={true}
-          objectFit="cover"
-        />
-      </div>
-
+    <div className="container h-[300px] relative text-white rounded overflow-hidden">
+      <Image
+        src={processImageUrl(props.imageUrl)}
+        alt="Banner"
+        fill={true}
+        objectFit="cover"
+        className="rounded"
+      ></Image>
       <div className="absolute bottom-0 bg-black w-full h-full bg-opacity-10 bg-gradient-to-t from-black via-black-opacity-5 to-transparent">
         <div className="absolute px-6 py-6 bottom-0">
-          <h1 className="heading-1 md:text-2xl lg:w-3/4 lg:text-3xl line-clamp-2 cursor-pointer hover:underline">
+          <h1 className="group heading-1 md:text-xl lg:w-3/4 lg:text-2xl line-clamp-2 cursor-pointer transition-all hover:underline">
             {props.postName}
           </h1>
           <div className="flex items-center gap-2 mt-2 md:gap-4 md:mt-4">
@@ -53,4 +51,4 @@ const BannerCard = (props: Props) => {
   );
 };
 
-export default BannerCard;
+export default PostBanner;

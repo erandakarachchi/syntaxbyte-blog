@@ -17,7 +17,7 @@ const SingleBlogPost = async ({ params }: Props) => {
   return (
     <>
       <article className="blog-container mt-4">
-        <h1 className="heading-1-title mt-6">{article.fields.title}</h1>
+        <h1 className="heading-1-title mt-6 text-center">{article.fields.title}</h1>
         <Image
           src={processImageUrl(article.fields.imageUrl.fields.file.url)}
           alt="Banner"
