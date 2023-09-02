@@ -13,7 +13,7 @@ async function getAllPosts() {
 
 const Home: React.FC = async () => {
   let allPosts = await getAllPosts();
-  allPosts = allPosts.flatMap((i) => Array(3).fill(i));
+  // allPosts = allPosts.flatMap((i) => Array(2).fill(i));
 
   const trendingPost: any = getTrendingPost(allPosts)[0];
   
