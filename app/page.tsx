@@ -15,8 +15,6 @@ const Home: React.FC = async () => {
 
   const trendingPost: any = getTrendingPost(allPosts)[0];
 
-  console.log("trendingPost", trendingPost);
-
   return (
     <main className="container">
       <section>

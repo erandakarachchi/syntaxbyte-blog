@@ -16,7 +16,7 @@ const SingleBlogPost = async ({ params }: Props) => {
 
   return (
     <>
-      <article className="blog-container mt-4">
+      <article className="blog-container px-6 mt-4">
         <h1 className="heading-1-title mt-6">{article.fields.title}</h1>
         <Image
           src={processImageUrl(article.fields.imageUrl.fields.file.url)}
